@@ -14,7 +14,7 @@ const client =  new Discordjs.Client({
 
 
 
-client.on("message", (msg:any) => {
+client.on("message", (msg:Message) => {
     if (msg.content === "hello"){
         msg.reply("hello!")
     }
