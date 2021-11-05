@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "discord.js": "^13.3.0"
+    "discord.js": "^13.3.0",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
@@ -9,8 +10,8 @@
   },
   "scripts": {
     "start": "node ./build/index.js",
-    "debug": "ts-node ./src/index.ts",
+    "debug": "yarn run ts-node ./src/index.ts",
     "compile": "tsc -p .",
     "compile:test": "tsc -p . --noEmit"
-}
+  }
 }
